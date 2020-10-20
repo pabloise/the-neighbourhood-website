@@ -1,0 +1,143 @@
+
+header{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: #cfcfcf;
+}
+
+.logo i{
+    margin-right: 15px;
+}
+
+.logo h1 {
+    font-family: Bebas Neue;
+    font-size: 50px;
+    margin-left: 15px;
+    padding: 10px 0px;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    border-bottom: 3px white solid;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.navbar {
+    display: none;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 5px 0px 5px 0px;
+    font-family: Bebas Neue;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar li {
+    display: inline;
+    flex-direction: row;
+    padding: 0px 25px 0px 25px;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+.wrappermain {
+    flex: 1 1 70%;
+}
+
+.newsContainer {
+    margin: 0px 30px;
+}
+
+.newsContainer p{
+    font-family: Montserrat;
+    margin-bottom: 15px;
+    border-bottom: solid 1px #cfcfcf;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.title {
+    font-family: Bebas Neue;
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.image{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar{
+    flex: 1 1 30%;
+    margin: 0px 30px;
+}
+
+.image-2 {
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px #cfcfcf solid  ;
+    padding-bottom: 15px;
+}
+
+.title-2 {
+    font-family: Bebas Neue;
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar p {
+    font-family: Montserrat;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #cfcfcf;
+    color: #000000;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 30px;
+}
+
+
+
+
+.container .wrapperadvertising {
+    width: 95%;
+    margin: 0px 30px 10px 30px;
+
+}
+
+
+@media screen and (min-width: 800px) {
+    .container {
+        flex-direction:row;
+    }
+    .navbar {
+        display: flex;
+    }
+    .logo i{
+        display: none;
+    }
+}
