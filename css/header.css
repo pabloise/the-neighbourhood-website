@@ -5,8 +5,12 @@ header {
     background-color: #cfcfcf;
 }
 
-.logo i {
-    margin-right: 15px;
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
 }
 
 .logo h1 {
@@ -16,14 +20,18 @@ header {
     padding: 10px 0px;
 }
 
-.logo {
-    width: 100%;
+.logo i {
+    margin-right: 15px;
+}
+
+.date {
+    font-family: Montserrat;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 27px;
-    border-bottom: 3px white solid;
+    border-bottom: 4px #ffffff solid;
+    padding-bottom: 10px;
 }
+
 .navbar {
     display: none;
     justify-content: center;
@@ -43,4 +51,3 @@ header {
     flex-direction: row;
     padding: 0px 25px 0px 25px;
 }
-

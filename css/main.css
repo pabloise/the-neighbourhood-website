@@ -20,6 +20,7 @@
 }
 
 .title {
+    margin-top: 15px;
     font-family: Bebas Neue;
     display: flex;
     font-size: 40px;
@@ -34,4 +35,3 @@
 .wrapperadvertising {
     margin: 0px 30px 10px 30px;
 }
-
