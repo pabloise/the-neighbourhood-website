@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        flex-direction:row;
+    }
+    .navbar {
+        display: flex;
+    }
+    .logo i{
+        display: none;
+    }

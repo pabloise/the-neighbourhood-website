@@ -1,0 +1,37 @@
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+.wrappermain {
+    flex: 1 1 70%;
+}
+
+.newsContainer {
+    margin: 0px 30px;
+}
+
+.newsContainer p {
+    font-family: Montserrat;
+    margin-bottom: 15px;
+    border-bottom: solid 1px #cfcfcf;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.title {
+    font-family: Bebas Neue;
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wrapperadvertising {
+    margin: 0px 30px 10px 30px;
+}
+

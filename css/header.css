@@ -1,0 +1,46 @@
+header {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: #cfcfcf;
+}
+
+.logo i {
+    margin-right: 15px;
+}
+
+.logo h1 {
+    font-family: Bebas Neue;
+    font-size: 50px;
+    margin-left: 15px;
+    padding: 10px 0px;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    border-bottom: 3px white solid;
+}
+.navbar {
+    display: none;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 5px 0px 5px 0px;
+    font-family: Bebas Neue;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar li {
+    display: inline;
+    flex-direction: row;
+    padding: 0px 25px 0px 25px;
+}
+
