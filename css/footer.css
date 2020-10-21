@@ -1,9 +1,9 @@
 .footer {
     display: flex;
     justify-content: center;
+    padding: 30px;
     background-color: #cfcfcf;
     color: #000000;
     font-family: Montserrat;
     font-weight: bold;
-    padding: 30px;
 }
