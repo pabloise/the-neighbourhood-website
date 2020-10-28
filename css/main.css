@@ -11,6 +11,12 @@
     margin: 0px 30px;
 }
 
+.principalArticle {
+    background-color: #cfcfcf;
+    padding: 10px;
+    margin: 15px 0px;
+}
+
 .newsContainer p {
     margin-bottom: 15px;
     padding-bottom: 15px;
