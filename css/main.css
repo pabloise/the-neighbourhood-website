@@ -41,3 +41,22 @@
 .wrapperadvertising {
     margin: 0px 30px 10px 30px;
 }
+
+.wrapperButton {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 20%;
+    background-color: #cfcfcf;
+    padding: 15px;
+    margin: 26px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    color:black

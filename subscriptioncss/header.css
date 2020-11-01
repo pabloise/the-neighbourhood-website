@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: #cfcfcf;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 27px;
+}
+
+.logo h1 {
+    padding: 10px 0px;
+    margin-left: 15px;
+    font-family: Bebas Neue;
+    font-size: 30px;
+}
+
+.logo i {
+    margin-right: 15px;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 4px #ffffff solid;
+    font-family: Montserrat;
+}
+
+.navbar {
+    display: none;
+    justify-content: center;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 20px;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar li {
+    display: inline;
+    flex-direction: row;
+    padding: 0px 25px 0px 25px;
+}

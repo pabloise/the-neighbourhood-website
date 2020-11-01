@@ -1,0 +1,58 @@
+.wrapperInput {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.suscribeContainer {
+    margin: 0px 30px;
+}
+
+.name input, .email input, .password input, .repitePassword input, .age input, .phoneNumber input, .adress input, .city input, .postcode input, .dni input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.wrapperInput h2 {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+
+.suscribeTitle {
+    border-bottom: 1px solid #cfcfcf;
+    margin: 0px 30px 30px 30px;
+}
+
+.suscribeTitle h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: Bebas Neue;
+    font-size: 25px;
+}
+
+.wrapperButton {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #cfcfcf;
+    margin-top: 15px;
+}
+
+.send {
+    padding: 30px 70px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color:black
+}
+
+
+
+
