@@ -16,7 +16,7 @@ function validateFullName (event) {
 
 function isValidEmail (email) {
     var emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (email && !email.match(emailFormat)) {
+    if (!email.match(emailFormat)) {
         return false;
     }
     return true;
