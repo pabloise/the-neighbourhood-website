@@ -199,14 +199,10 @@ function buttonClicked (event) {
     }
 }
 
-
-
 function hideError(event) {
     var error = event.target.nextElementSibling;
     error.classList.replace('showError', 'hideError');
 }
-
-
 
 window.onload = function () {
     var name = document.getElementById('fullName');
