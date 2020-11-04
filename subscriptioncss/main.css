@@ -38,19 +38,26 @@
 
 .wrapperButton {
     display: flex;
+    width: 100%;
     justify-content: center;
 }
 
-.button {
-    background-color: #cfcfcf;
-    margin-top: 15px;
-}
-
-.send {
-    padding: 30px 70px;
+#button {
+    padding: 10px 60px;
     font-family: Montserrat;
     font-weight: bold;
-    color:black
+    background-color: #cfcfcf;
+}
+
+.showError {
+    display:flex;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: red;
+}
+
+.hideError {
+    display:none;
 }
 
 
