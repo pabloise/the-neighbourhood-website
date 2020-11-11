@@ -15,7 +15,8 @@ function validateFullName (event) {
 }
 
 function isValidEmail (email) {
-    var emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    var emailFormat = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]| \\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
     if (!email.match(emailFormat)) {
         return false;
     }
@@ -95,7 +96,7 @@ function validatePhoneNumber (event) {
 }
 
 function isValidAdress (adress) {
-    var adressFormat = /^([a-zA-Z])+\s([0-9])+$/;
+    var adressFormat = /^(?!\d+$)(?:[a-zA-Z0-9][a-zA-Z0-9 @&$]*)?$/;
     if (adress.length < 5 || !adress.match(adressFormat)) {
     return false;
     }
@@ -167,25 +168,25 @@ function getInputValues() {
 function getErrors() {
     var errors = [];
     var correctFullName = isValidFullName(document.getElementById('fullName').value);
-    if (!correctFullName) errors.push('fullNameError');
+    if (!correctFullName) errors.push('The full name is incorrect');
     var correctEmail = isValidEmail(document.getElementById('email').value);
-    if (!correctEmail) errors.push('emailError');
+    if (!correctEmail) errors.push('The email is not valid');
     var correctPassword = isValidPassword(document.getElementById('password').value);
-    if (!correctPassword) errors.push('passwordError');
+    if (!correctPassword) errors.push('The password do not contains a letter or a number');
     var correctComparePassword = isValidComparePassword(document.getElementById('repitePassword').value);
-    if (!correctComparePassword) errors.push ('passwordCompareError');
+    if (!correctComparePassword) errors.push ('The password does not match with the first one');
     var correctAge = isValidAge(document.getElementById('age').value);
-    if (!correctAge) errors.push ('ageError');
+    if (!correctAge) errors.push ('The age is wrong. Must be older than 18');
     var correctPhoneNumber = isValidPhoneNumber(document.getElementById('phoneNumber').value);
-    if (!correctPhoneNumber) errors.push ('phoneNumberError');
+    if (!correctPhoneNumber) errors.push ('The phone number is not valid');
     var correctAdress = isValidAdress(document.getElementById('adress').value);
-    if (!correctAdress) errors.push ('adressError');
+    if (!correctAdress) errors.push ('The adress is not valid');
     var correctCity = isValidCity(document.getElementById('city').value);
-    if (!correctCity) errors.push ('cityError');
+    if (!correctCity) errors.push ('The city is not valid');
     var correctPostcode = isValidPostcode(document.getElementById('postcode').value);
-    if (!correctPostcode) errors.push ('postcodeError');
+    if (!correctPostcode) errors.push ('The postcode added is not valid. It must contain at least 3 characters');
     var correctDni = isValidDni(document.getElementById('dni').value);
-    if (!correctDni) errors.push ('dniError');
+    if (!correctDni) errors.push ('The DNI is not valid');
     return errors;
 }
 
